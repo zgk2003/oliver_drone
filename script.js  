@@ -1,0 +1,19 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const dataContainer = document.getElementById("data");
+
+    // Made-up air quality data
+    const airQualityData = [
+        { site: "Site 1", AQI: 42, status: "Good" },
+        { site: "Site 2", AQI: 89, status: "Moderate" },
+        { site: "Site 3", AQI: 152, status: "Unhealthy" },
+    ];
+
+    // Generate a table
+    let table = "<table><tr><th>Site</th><th>AQI</th><th>Status</th></tr>";
+    airQualityData.forEach((entry) => {
+        table += `<tr><td>${entry.site}</td><td>${entry.AQI}</td><td>${entry.status}</td></tr>`;
+    });
+    table += "</table>";
+
+    dataContainer.innerHTML = table;
+});

@@ -1,0 +1,17 @@
+[
+    {
+        "site": "Site 1",
+        "AQI": 42,
+        "status": "Good"
+    },
+    {
+        "site": "Site 2",
+        "AQI": 89,
+        "status": "Moderate"
+    },
+    {
+        "site": "Site 3",
+        "AQI": 152,
+        "status": "Unhealthy"
+    }
+]
